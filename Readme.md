@@ -1,0 +1,1 @@
+This is only the result of practice, and I do not own the copyright to this design. This exercise is titled “Build a Product Landing Page” in CSS Grid. Thanks to https://www.freecodecamp.org/ and [fontawesome.com](https://fontawesome.com/) for using the icon. All rights reserved 2026
