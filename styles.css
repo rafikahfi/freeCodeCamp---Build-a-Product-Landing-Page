@@ -1,0 +1,239 @@
+*,
+::before,
+::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  list-style-type: none;
+  text-decoration: none;
+  color: #333;
+}
+
+body {
+  background-color: #eee;
+  font-family: Arial, sans-serif;
+  position: relative;
+}
+
+#header {
+  position: sticky;
+  top: 0;
+  background-color: #eee;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 4rem;
+  align-items: center;
+  color: #333;
+  box-shadow: 0px 2px 3px rgba(220, 220, 220, 0.8);
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.brand-logo {
+  font-size: 1.5rem;
+  color: #333;
+  letter-spacing: 0.1rem;
+  font-family: "Georgia", serif;
+}
+
+#nav-bar ul {
+  display: flex;
+  gap: 1.5rem;
+}
+
+.nav-link:hover,
+footer a:hover {
+  color: black;
+}
+
+#features {
+  margin: 4rem 5rem;
+}
+
+.features-items {
+  display: flex;
+  margin-bottom: 1.5rem;
+  align-items: center;
+}
+
+.features-logo {
+  margin-right: 2rem;
+}
+
+.features-text h2 {
+  margin-bottom: 0.8rem;
+}
+
+#how-it-works {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+#pricing {
+  margin: 4rem 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 1rem;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  border: 2px solid black;
+  align-items: center;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 0px 0px 3px black;
+  transition: 0.3s;
+}
+
+.pricing-card:hover {
+  background-color: #ddd;
+}
+
+.card-title {
+  background-color: #ccc;
+  width: 100%;
+  padding: 1rem 0;
+  text-transform: uppercase;
+  border-top-right-radius: 2px;
+  border-top-left-radius: 2px;
+}
+
+.card-price {
+  font-size: 1.5rem;
+  padding: 1rem 0;
+  font-weight: bold;
+}
+
+.card-text p {
+  font-weight: 500;
+  margin-bottom: 0.5rem;
+}
+
+.card-button button {
+  cursor: pointer;
+  padding: 0.5rem 2rem;
+  background-color: gold;
+  border-radius: 5px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 4rem;
+}
+
+#form label {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#form input[type="email"] {
+  width: 25%;
+  padding: 0.5rem 0.2rem;
+}
+
+#form input[type="submit"] {
+  padding: 0.5rem 1rem;
+  border-radius: 5px;
+  background-color: gold;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+footer {
+  background-color: #ddd;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: end;
+  gap: 0.5rem;
+}
+
+.footer-link {
+  width: 15rem;
+}
+
+.footer-link ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+@media screen and (max-width: 720px) {
+  #header {
+    justify-content: center;
+  }
+
+  nav {
+    display: none;
+  }
+
+  #features {
+    margin: 4rem 3rem;
+  }
+
+  .features-items {
+    display: flex;
+    margin-bottom: 3rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .features-logo {
+    margin-right: 0;
+    margin-bottom: 1rem;
+  }
+
+  .features-text h2 {
+    margin-bottom: 0.8rem;
+  }
+
+  #how-it-works {
+    padding: 0 1.5rem;
+  }
+
+  #video {
+    width: 90%;
+    max-width: 500px;
+  }
+
+  #pricing {
+    margin: 4rem 4rem;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .pricing-card {
+    margin-bottom: 2rem;
+  }
+
+  #form label {
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    padding: 0 1.5rem;
+  }
+
+  #form input[type="email"] {
+    width: 50%;
+    padding: 0.5rem 0.2rem;
+  }
+
+  footer {
+    align-items: center;
+    padding: 3rem 0;
+    gap: 1rem;
+  }
+}
